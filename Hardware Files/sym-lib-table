@@ -1,3 +1,3 @@
 (sym_lib_table
-  (lib (name {ProjectName})(type Legacy)(uri ${KIPRJMOD}/Libraries/Symbols/{ProjectName}.lib)(options "")(descr ""))
+  (lib (name NoiseLevelMonitor)(type Legacy)(uri ${KIPRJMOD}/Libraries/Symbols/NoiseLevelMonitor.lib)(options "")(descr ""))
 )
