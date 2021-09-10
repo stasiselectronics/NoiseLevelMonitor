@@ -1,4 +1,4 @@
-# {ProjectName}
+# NoiseLevelMonitor
 
 Welcome to the source files!
 
