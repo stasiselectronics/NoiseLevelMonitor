@@ -1,7 +1,7 @@
 EESchema Schematic File Version 4
 EELAYER 30 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title "Noise Level Monitor"
@@ -16,12 +16,12 @@ $EndDescr
 $Comp
 L Amplifier_Operational:LM358 U?
 U 1 1 613B15FA
-P 13400 1150
-F 0 "U?" H 13400 783 50  0000 C CNN
-F 1 "LM358" H 13400 874 50  0000 C CNN
-F 2 "" H 13400 1150 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 13400 1150 50  0001 C CNN
-	1    13400 1150
+P 13300 850
+F 0 "U?" H 13300 483 50  0000 C CNN
+F 1 "LM358" H 13300 574 50  0000 C CNN
+F 2 "" H 13300 850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 13300 850 50  0001 C CNN
+	1    13300 850 
 	1    0    0    1   
 $EndComp
 $Comp
@@ -215,406 +215,452 @@ Text GLabel 10550 800  2    50   Input ~ 0
 Audio_Band_3
 Text GLabel 10550 600  2    50   Input ~ 0
 Audio_Band_4
-Text GLabel 5150 900  0    50   Input ~ 0
-Audio_Input
-$Comp
-L Device:R R?
-U 1 1 613CE656
-P 5500 900
-F 0 "R?" V 5293 900 50  0000 C CNN
-F 1 "R" V 5384 900 50  0000 C CNN
-F 2 "" V 5430 900 50  0001 C CNN
-F 3 "~" H 5500 900 50  0001 C CNN
-	1    5500 900 
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5350 900  5150 900 
-$Comp
-L Device:C C?
-U 1 1 613CF850
-P 6050 900
-F 0 "C?" V 5798 900 50  0000 C CNN
-F 1 "C" V 5889 900 50  0000 C CNN
-F 2 "" H 6088 750 50  0001 C CNN
-F 3 "~" H 6050 900 50  0001 C CNN
-	1    6050 900 
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5650 900  5900 900 
-$Comp
-L Device:C C?
-U 1 1 613D063C
-P 6350 1250
-F 0 "C?" H 6235 1204 50  0000 R CNN
-F 1 "C" H 6235 1295 50  0000 R CNN
-F 2 "" H 6388 1100 50  0001 C CNN
-F 3 "~" H 6350 1250 50  0001 C CNN
-	1    6350 1250
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6200 900  6350 900 
-Wire Wire Line
-	6350 900  6350 1100
-$Comp
-L Device:R R?
-U 1 1 613D1021
-P 6800 1250
-F 0 "R?" H 6730 1204 50  0000 R CNN
-F 1 "R" H 6730 1295 50  0000 R CNN
-F 2 "" V 6730 1250 50  0001 C CNN
-F 3 "~" H 6800 1250 50  0001 C CNN
-	1    6800 1250
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6800 1100 6800 900 
-Wire Wire Line
-	6800 900  6350 900 
-Connection ~ 6350 900 
-Wire Wire Line
-	6350 1400 6350 1550
-Wire Wire Line
-	6350 1550 6800 1550
-Wire Wire Line
-	6800 1550 6800 1400
-$Comp
-L power:GND #PWR?
-U 1 1 613D22AA
-P 6350 1700
-F 0 "#PWR?" H 6350 1450 50  0001 C CNN
-F 1 "GND" H 6355 1527 50  0000 C CNN
-F 2 "" H 6350 1700 50  0001 C CNN
-F 3 "" H 6350 1700 50  0001 C CNN
-	1    6350 1700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6350 1700 6350 1550
-Connection ~ 6350 1550
-Text GLabel 7200 900  2    50   Input ~ 0
+Text GLabel 12650 950  0    50   Input ~ 0
 Audio_Band_1
 Wire Wire Line
-	7200 900  6800 900 
-Connection ~ 6800 900 
-Text Notes 6300 850  0    50   ~ 0
-Band Pass Filter
-Text GLabel 5150 2300 0    50   Input ~ 0
-Audio_Input
-$Comp
-L Device:R R?
-U 1 1 613D8CC3
-P 5500 2300
-F 0 "R?" V 5293 2300 50  0000 C CNN
-F 1 "R" V 5384 2300 50  0000 C CNN
-F 2 "" V 5430 2300 50  0001 C CNN
-F 3 "~" H 5500 2300 50  0001 C CNN
-	1    5500 2300
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5350 2300 5150 2300
-$Comp
-L Device:C C?
-U 1 1 613D8CCA
-P 6050 2300
-F 0 "C?" V 5798 2300 50  0000 C CNN
-F 1 "C" V 5889 2300 50  0000 C CNN
-F 2 "" H 6088 2150 50  0001 C CNN
-F 3 "~" H 6050 2300 50  0001 C CNN
-	1    6050 2300
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5650 2300 5900 2300
-$Comp
-L Device:C C?
-U 1 1 613D8CD1
-P 6350 2650
-F 0 "C?" H 6235 2604 50  0000 R CNN
-F 1 "C" H 6235 2695 50  0000 R CNN
-F 2 "" H 6388 2500 50  0001 C CNN
-F 3 "~" H 6350 2650 50  0001 C CNN
-	1    6350 2650
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6200 2300 6350 2300
-Wire Wire Line
-	6350 2300 6350 2500
-$Comp
-L Device:R R?
-U 1 1 613D8CD9
-P 6800 2650
-F 0 "R?" H 6730 2604 50  0000 R CNN
-F 1 "R" H 6730 2695 50  0000 R CNN
-F 2 "" V 6730 2650 50  0001 C CNN
-F 3 "~" H 6800 2650 50  0001 C CNN
-	1    6800 2650
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6800 2500 6800 2300
-Wire Wire Line
-	6800 2300 6350 2300
-Connection ~ 6350 2300
-Wire Wire Line
-	6350 2800 6350 2950
-Wire Wire Line
-	6350 2950 6800 2950
-Wire Wire Line
-	6800 2950 6800 2800
-$Comp
-L power:GND #PWR?
-U 1 1 613D8CE5
-P 6350 3100
-F 0 "#PWR?" H 6350 2850 50  0001 C CNN
-F 1 "GND" H 6355 2927 50  0000 C CNN
-F 2 "" H 6350 3100 50  0001 C CNN
-F 3 "" H 6350 3100 50  0001 C CNN
-	1    6350 3100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6350 3100 6350 2950
-Connection ~ 6350 2950
-Wire Wire Line
-	7200 2300 6800 2300
-Connection ~ 6800 2300
-Text Notes 6300 2250 0    50   ~ 0
-Band Pass Filter
-Text GLabel 5150 3650 0    50   Input ~ 0
-Audio_Input
-$Comp
-L Device:R R?
-U 1 1 613DA7FA
-P 5500 3650
-F 0 "R?" V 5293 3650 50  0000 C CNN
-F 1 "R" V 5384 3650 50  0000 C CNN
-F 2 "" V 5430 3650 50  0001 C CNN
-F 3 "~" H 5500 3650 50  0001 C CNN
-	1    5500 3650
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5350 3650 5150 3650
-$Comp
-L Device:C C?
-U 1 1 613DA801
-P 6050 3650
-F 0 "C?" V 5798 3650 50  0000 C CNN
-F 1 "C" V 5889 3650 50  0000 C CNN
-F 2 "" H 6088 3500 50  0001 C CNN
-F 3 "~" H 6050 3650 50  0001 C CNN
-	1    6050 3650
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5650 3650 5900 3650
-$Comp
-L Device:C C?
-U 1 1 613DA808
-P 6350 4000
-F 0 "C?" H 6235 3954 50  0000 R CNN
-F 1 "C" H 6235 4045 50  0000 R CNN
-F 2 "" H 6388 3850 50  0001 C CNN
-F 3 "~" H 6350 4000 50  0001 C CNN
-	1    6350 4000
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6200 3650 6350 3650
-Wire Wire Line
-	6350 3650 6350 3850
-$Comp
-L Device:R R?
-U 1 1 613DA810
-P 6800 4000
-F 0 "R?" H 6730 3954 50  0000 R CNN
-F 1 "R" H 6730 4045 50  0000 R CNN
-F 2 "" V 6730 4000 50  0001 C CNN
-F 3 "~" H 6800 4000 50  0001 C CNN
-	1    6800 4000
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6800 3850 6800 3650
-Wire Wire Line
-	6800 3650 6350 3650
-Connection ~ 6350 3650
-Wire Wire Line
-	6350 4150 6350 4300
-Wire Wire Line
-	6350 4300 6800 4300
-Wire Wire Line
-	6800 4300 6800 4150
-$Comp
-L power:GND #PWR?
-U 1 1 613DA81C
-P 6350 4450
-F 0 "#PWR?" H 6350 4200 50  0001 C CNN
-F 1 "GND" H 6355 4277 50  0000 C CNN
-F 2 "" H 6350 4450 50  0001 C CNN
-F 3 "" H 6350 4450 50  0001 C CNN
-	1    6350 4450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6350 4450 6350 4300
-Connection ~ 6350 4300
-Wire Wire Line
-	7200 3650 6800 3650
-Connection ~ 6800 3650
-Text Notes 6300 3600 0    50   ~ 0
-Band Pass Filter
-Text GLabel 5150 5000 0    50   Input ~ 0
-Audio_Input
-$Comp
-L Device:R R?
-U 1 1 613DC7B5
-P 5500 5000
-F 0 "R?" V 5293 5000 50  0000 C CNN
-F 1 "R" V 5384 5000 50  0000 C CNN
-F 2 "" V 5430 5000 50  0001 C CNN
-F 3 "~" H 5500 5000 50  0001 C CNN
-	1    5500 5000
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5350 5000 5150 5000
-$Comp
-L Device:C C?
-U 1 1 613DC7BC
-P 6050 5000
-F 0 "C?" V 5798 5000 50  0000 C CNN
-F 1 "C" V 5889 5000 50  0000 C CNN
-F 2 "" H 6088 4850 50  0001 C CNN
-F 3 "~" H 6050 5000 50  0001 C CNN
-	1    6050 5000
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5650 5000 5900 5000
-$Comp
-L Device:C C?
-U 1 1 613DC7C3
-P 6350 5350
-F 0 "C?" H 6235 5304 50  0000 R CNN
-F 1 "C" H 6235 5395 50  0000 R CNN
-F 2 "" H 6388 5200 50  0001 C CNN
-F 3 "~" H 6350 5350 50  0001 C CNN
-	1    6350 5350
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6200 5000 6350 5000
-Wire Wire Line
-	6350 5000 6350 5200
-$Comp
-L Device:R R?
-U 1 1 613DC7CB
-P 6800 5350
-F 0 "R?" H 6730 5304 50  0000 R CNN
-F 1 "R" H 6730 5395 50  0000 R CNN
-F 2 "" V 6730 5350 50  0001 C CNN
-F 3 "~" H 6800 5350 50  0001 C CNN
-	1    6800 5350
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6800 5200 6800 5000
-Wire Wire Line
-	6800 5000 6350 5000
-Connection ~ 6350 5000
-Wire Wire Line
-	6350 5500 6350 5650
-Wire Wire Line
-	6350 5650 6800 5650
-Wire Wire Line
-	6800 5650 6800 5500
-$Comp
-L power:GND #PWR?
-U 1 1 613DC7D7
-P 6350 5800
-F 0 "#PWR?" H 6350 5550 50  0001 C CNN
-F 1 "GND" H 6355 5627 50  0000 C CNN
-F 2 "" H 6350 5800 50  0001 C CNN
-F 3 "" H 6350 5800 50  0001 C CNN
-	1    6350 5800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6350 5800 6350 5650
-Connection ~ 6350 5650
-Wire Wire Line
-	7200 5000 6800 5000
-Connection ~ 6800 5000
-Text Notes 6300 4950 0    50   ~ 0
-Band Pass Filter
-Text GLabel 7200 2300 2    50   Input ~ 0
-Audio_Band_2
-Text GLabel 7200 3650 2    50   Input ~ 0
-Audio_Band_3
-Text GLabel 7200 5000 2    50   Input ~ 0
-Audio_Band_4
-Text GLabel 12750 1250 0    50   Input ~ 0
-Audio_Band_1
-Wire Wire Line
-	12750 1250 13100 1250
+	12650 950  13000 950 
 $Comp
 L pspice:DIODE D?
 U 1 1 613EB16C
-P 14200 1150
-F 0 "D?" H 14200 1415 50  0000 C CNN
-F 1 "DIODE" H 14200 1324 50  0000 C CNN
-F 2 "" H 14200 1150 50  0001 C CNN
-F 3 "~" H 14200 1150 50  0001 C CNN
-	1    14200 1150
+P 14100 850
+F 0 "D?" H 14100 1115 50  0000 C CNN
+F 1 "DIODE" H 14100 1024 50  0000 C CNN
+F 2 "" H 14100 850 50  0001 C CNN
+F 3 "~" H 14100 850 50  0001 C CNN
+	1    14100 850 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	14000 1150 13700 1150
+	13900 850  13600 850 
 Wire Wire Line
-	13100 1050 12750 1050
+	13000 750  12650 750 
 Wire Wire Line
-	12750 1050 12750 700 
+	12650 750  12650 400 
 Wire Wire Line
-	12750 700  14700 700 
+	12650 400  14600 400 
 Wire Wire Line
-	14700 700  14700 1150
+	14600 400  14600 850 
 Wire Wire Line
-	14700 1150 14400 1150
+	14600 850  14300 850 
 $Comp
 L Device:C C?
 U 1 1 613EF4FD
-P 14700 1500
-F 0 "C?" H 14815 1546 50  0000 L CNN
-F 1 "C" H 14815 1455 50  0000 L CNN
-F 2 "" H 14738 1350 50  0001 C CNN
-F 3 "~" H 14700 1500 50  0001 C CNN
-	1    14700 1500
+P 14600 1200
+F 0 "C?" H 14715 1246 50  0000 L CNN
+F 1 "C" H 14715 1155 50  0000 L CNN
+F 2 "" H 14638 1050 50  0001 C CNN
+F 3 "~" H 14600 1200 50  0001 C CNN
+	1    14600 1200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	14700 1350 14700 1150
-Connection ~ 14700 1150
+	14600 1050 14600 850 
+Connection ~ 14600 850 
 $Comp
 L power:GND #PWR?
 U 1 1 613F132D
-P 14700 1800
-F 0 "#PWR?" H 14700 1550 50  0001 C CNN
-F 1 "GND" H 14705 1627 50  0000 C CNN
-F 2 "" H 14700 1800 50  0001 C CNN
-F 3 "" H 14700 1800 50  0001 C CNN
-	1    14700 1800
+P 14600 1500
+F 0 "#PWR?" H 14600 1250 50  0001 C CNN
+F 1 "GND" H 14605 1327 50  0000 C CNN
+F 2 "" H 14600 1500 50  0001 C CNN
+F 3 "" H 14600 1500 50  0001 C CNN
+	1    14600 1500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	14700 1800 14700 1650
-Text GLabel 15150 1150 2    50   Input ~ 0
+	14600 1500 14600 1350
+Text GLabel 15050 850  2    50   Input ~ 0
 PeakDetected_Band_1
 Wire Wire Line
-	15150 1150 14700 1150
+	15050 850  14600 850 
+Text GLabel 17750 450  0    50   Input ~ 0
+Audio_Input
+$Comp
+L Device:C C?
+U 1 1 613CF850
+P 18150 450
+F 0 "C?" V 17898 450 50  0000 C CNN
+F 1 "C" V 17989 450 50  0000 C CNN
+F 2 "" H 18188 300 50  0001 C CNN
+F 3 "~" H 18150 450 50  0001 C CNN
+	1    18150 450 
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 613CE656
+P 18550 850
+F 0 "R?" V 18343 850 50  0000 C CNN
+F 1 "R" V 18434 850 50  0000 C CNN
+F 2 "" V 18480 850 50  0001 C CNN
+F 3 "~" H 18550 850 50  0001 C CNN
+	1    18550 850 
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	18300 450  18550 450 
+Wire Wire Line
+	18550 450  18550 700 
+Wire Wire Line
+	17750 450  18000 450 
+$Comp
+L power:GND #PWR?
+U 1 1 614191F7
+P 18550 1100
+F 0 "#PWR?" H 18550 850 50  0001 C CNN
+F 1 "GND" H 18555 927 50  0000 C CNN
+F 2 "" H 18550 1100 50  0001 C CNN
+F 3 "" H 18550 1100 50  0001 C CNN
+	1    18550 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18550 1100 18550 1000
+$Comp
+L Device:C C?
+U 1 1 6141B773
+P 19050 850
+F 0 "C?" H 18935 804 50  0000 R CNN
+F 1 "C" H 18935 895 50  0000 R CNN
+F 2 "" H 19088 700 50  0001 C CNN
+F 3 "~" H 19050 850 50  0001 C CNN
+	1    19050 850 
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6141D1F4
+P 19050 1100
+F 0 "#PWR?" H 19050 850 50  0001 C CNN
+F 1 "GND" H 19055 927 50  0000 C CNN
+F 2 "" H 19050 1100 50  0001 C CNN
+F 3 "" H 19050 1100 50  0001 C CNN
+	1    19050 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	19050 1100 19050 1000
+Wire Wire Line
+	19050 700  19050 450 
+Wire Wire Line
+	19050 450  18550 450 
+Connection ~ 18550 450 
+$Comp
+L Device:R R?
+U 1 1 614207DB
+P 19450 450
+F 0 "R?" H 19380 404 50  0000 R CNN
+F 1 "R" H 19380 495 50  0000 R CNN
+F 2 "" V 19380 450 50  0001 C CNN
+F 3 "~" H 19450 450 50  0001 C CNN
+	1    19450 450 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	19300 450  19050 450 
+Connection ~ 19050 450 
+Text GLabel 19850 450  2    50   Input ~ 0
+Audio_Band_1
+Wire Wire Line
+	19850 450  19600 450 
+Wire Notes Line
+	17050 -50  20650 -50 
+Wire Notes Line
+	20650 1550 17050 1550
+Text GLabel 17750 2050 0    50   Input ~ 0
+Audio_Input
+$Comp
+L Device:C C?
+U 1 1 61453908
+P 18150 2050
+F 0 "C?" V 17898 2050 50  0000 C CNN
+F 1 "C" V 17989 2050 50  0000 C CNN
+F 2 "" H 18188 1900 50  0001 C CNN
+F 3 "~" H 18150 2050 50  0001 C CNN
+	1    18150 2050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6145390E
+P 18550 2450
+F 0 "R?" V 18343 2450 50  0000 C CNN
+F 1 "R" V 18434 2450 50  0000 C CNN
+F 2 "" V 18480 2450 50  0001 C CNN
+F 3 "~" H 18550 2450 50  0001 C CNN
+	1    18550 2450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	18300 2050 18550 2050
+Wire Wire Line
+	18550 2050 18550 2300
+Wire Wire Line
+	17750 2050 18000 2050
+$Comp
+L power:GND #PWR?
+U 1 1 61453917
+P 18550 2700
+F 0 "#PWR?" H 18550 2450 50  0001 C CNN
+F 1 "GND" H 18555 2527 50  0000 C CNN
+F 2 "" H 18550 2700 50  0001 C CNN
+F 3 "" H 18550 2700 50  0001 C CNN
+	1    18550 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18550 2700 18550 2600
+$Comp
+L Device:C C?
+U 1 1 6145391E
+P 19050 2450
+F 0 "C?" H 18935 2404 50  0000 R CNN
+F 1 "C" H 18935 2495 50  0000 R CNN
+F 2 "" H 19088 2300 50  0001 C CNN
+F 3 "~" H 19050 2450 50  0001 C CNN
+	1    19050 2450
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61453924
+P 19050 2700
+F 0 "#PWR?" H 19050 2450 50  0001 C CNN
+F 1 "GND" H 19055 2527 50  0000 C CNN
+F 2 "" H 19050 2700 50  0001 C CNN
+F 3 "" H 19050 2700 50  0001 C CNN
+	1    19050 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	19050 2700 19050 2600
+Wire Wire Line
+	19050 2300 19050 2050
+Wire Wire Line
+	19050 2050 18550 2050
+Connection ~ 18550 2050
+$Comp
+L Device:R R?
+U 1 1 6145392E
+P 19450 2050
+F 0 "R?" H 19380 2004 50  0000 R CNN
+F 1 "R" H 19380 2095 50  0000 R CNN
+F 2 "" V 19380 2050 50  0001 C CNN
+F 3 "~" H 19450 2050 50  0001 C CNN
+	1    19450 2050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	19300 2050 19050 2050
+Connection ~ 19050 2050
+Wire Wire Line
+	19850 2050 19600 2050
+Wire Notes Line
+	20650 3150 17050 3150
+Text GLabel 17750 3650 0    50   Input ~ 0
+Audio_Input
+$Comp
+L Device:C C?
+U 1 1 61456646
+P 18150 3650
+F 0 "C?" V 17898 3650 50  0000 C CNN
+F 1 "C" V 17989 3650 50  0000 C CNN
+F 2 "" H 18188 3500 50  0001 C CNN
+F 3 "~" H 18150 3650 50  0001 C CNN
+	1    18150 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6145664C
+P 18550 4050
+F 0 "R?" V 18343 4050 50  0000 C CNN
+F 1 "R" V 18434 4050 50  0000 C CNN
+F 2 "" V 18480 4050 50  0001 C CNN
+F 3 "~" H 18550 4050 50  0001 C CNN
+	1    18550 4050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	18300 3650 18550 3650
+Wire Wire Line
+	18550 3650 18550 3900
+Wire Wire Line
+	17750 3650 18000 3650
+$Comp
+L power:GND #PWR?
+U 1 1 61456655
+P 18550 4300
+F 0 "#PWR?" H 18550 4050 50  0001 C CNN
+F 1 "GND" H 18555 4127 50  0000 C CNN
+F 2 "" H 18550 4300 50  0001 C CNN
+F 3 "" H 18550 4300 50  0001 C CNN
+	1    18550 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18550 4300 18550 4200
+$Comp
+L Device:C C?
+U 1 1 6145665C
+P 19050 4050
+F 0 "C?" H 18935 4004 50  0000 R CNN
+F 1 "C" H 18935 4095 50  0000 R CNN
+F 2 "" H 19088 3900 50  0001 C CNN
+F 3 "~" H 19050 4050 50  0001 C CNN
+	1    19050 4050
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61456662
+P 19050 4300
+F 0 "#PWR?" H 19050 4050 50  0001 C CNN
+F 1 "GND" H 19055 4127 50  0000 C CNN
+F 2 "" H 19050 4300 50  0001 C CNN
+F 3 "" H 19050 4300 50  0001 C CNN
+	1    19050 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	19050 4300 19050 4200
+Wire Wire Line
+	19050 3900 19050 3650
+Wire Wire Line
+	19050 3650 18550 3650
+Connection ~ 18550 3650
+$Comp
+L Device:R R?
+U 1 1 6145666C
+P 19450 3650
+F 0 "R?" H 19380 3604 50  0000 R CNN
+F 1 "R" H 19380 3695 50  0000 R CNN
+F 2 "" V 19380 3650 50  0001 C CNN
+F 3 "~" H 19450 3650 50  0001 C CNN
+	1    19450 3650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	19300 3650 19050 3650
+Connection ~ 19050 3650
+Text GLabel 19850 3650 2    50   Input ~ 0
+Audio_Band_3
+Wire Wire Line
+	19850 3650 19600 3650
+Wire Notes Line
+	20650 4750 17050 4750
+Text GLabel 17750 5250 0    50   Input ~ 0
+Audio_Input
+$Comp
+L Device:C C?
+U 1 1 614598ED
+P 18150 5250
+F 0 "C?" V 17898 5250 50  0000 C CNN
+F 1 "C" V 17989 5250 50  0000 C CNN
+F 2 "" H 18188 5100 50  0001 C CNN
+F 3 "~" H 18150 5250 50  0001 C CNN
+	1    18150 5250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 614598F3
+P 18550 5650
+F 0 "R?" V 18343 5650 50  0000 C CNN
+F 1 "R" V 18434 5650 50  0000 C CNN
+F 2 "" V 18480 5650 50  0001 C CNN
+F 3 "~" H 18550 5650 50  0001 C CNN
+	1    18550 5650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	18300 5250 18550 5250
+Wire Wire Line
+	18550 5250 18550 5500
+Wire Wire Line
+	17750 5250 18000 5250
+$Comp
+L power:GND #PWR?
+U 1 1 614598FC
+P 18550 5900
+F 0 "#PWR?" H 18550 5650 50  0001 C CNN
+F 1 "GND" H 18555 5727 50  0000 C CNN
+F 2 "" H 18550 5900 50  0001 C CNN
+F 3 "" H 18550 5900 50  0001 C CNN
+	1    18550 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18550 5900 18550 5800
+$Comp
+L Device:C C?
+U 1 1 61459903
+P 19050 5650
+F 0 "C?" H 18935 5604 50  0000 R CNN
+F 1 "C" H 18935 5695 50  0000 R CNN
+F 2 "" H 19088 5500 50  0001 C CNN
+F 3 "~" H 19050 5650 50  0001 C CNN
+	1    19050 5650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61459909
+P 19050 5900
+F 0 "#PWR?" H 19050 5650 50  0001 C CNN
+F 1 "GND" H 19055 5727 50  0000 C CNN
+F 2 "" H 19050 5900 50  0001 C CNN
+F 3 "" H 19050 5900 50  0001 C CNN
+	1    19050 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	19050 5900 19050 5800
+Wire Wire Line
+	19050 5500 19050 5250
+Wire Wire Line
+	19050 5250 18550 5250
+Connection ~ 18550 5250
+$Comp
+L Device:R R?
+U 1 1 61459913
+P 19450 5250
+F 0 "R?" H 19380 5204 50  0000 R CNN
+F 1 "R" H 19380 5295 50  0000 R CNN
+F 2 "" V 19380 5250 50  0001 C CNN
+F 3 "~" H 19450 5250 50  0001 C CNN
+	1    19450 5250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	19300 5250 19050 5250
+Connection ~ 19050 5250
+Text GLabel 19850 5250 2    50   Input ~ 0
+Audio_Band_4
+Wire Wire Line
+	19850 5250 19600 5250
+Wire Notes Line
+	20650 6350 17050 6350
+Wire Notes Line
+	20650 -50  20650 6350
+Wire Notes Line
+	17050 -50  17050 6350
+Text GLabel 19850 2050 2    50   Input ~ 0
+Audio_Band_2
+Text Notes 17100 1700 0    50   ~ 0
+Band Pass Filter
+Text Notes 17100 1800 0    50   ~ 0
+600 Hz ... 4 kHz
+Text Notes 17100 3300 0    50   ~ 0
+Band Pass Filter
+Text Notes 17100 3400 0    50   ~ 0
+4 kHz ... 16 kHz
+Text Notes 17100 4900 0    50   ~ 0
+High Pass Filter
+Text Notes 17100 5000 0    50   ~ 0
+16 kHz
+Text Notes 17100 100  0    50   ~ 0
+Low Pass Filter
+Text Notes 17100 200  0    50   ~ 0
+600 Hz
 $EndSCHEMATC
